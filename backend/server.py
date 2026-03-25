@@ -71,7 +71,7 @@ async def get_all_files():
     files = await db.files.find({}, {"_id": 0}).to_list(5000)
     return files
 
-@api_router.post("/files", response_model=FileItem)
+@api_router.post("/files", response_model=FileItem, status_code=201)
 async def create_file(input_data: FileCreate):
     existing = await db.files.find_one({"path": input_data.path}, {"_id": 0})
     if existing:
@@ -115,7 +115,7 @@ async def get_notes():
     notes = await db.notes.find({}, {"_id": 0}).to_list(1000)
     return notes
 
-@api_router.post("/notes", response_model=NoteItem)
+@api_router.post("/notes", response_model=NoteItem, status_code=201)
 async def create_note(input_data: NoteCreate):
     note_obj = NoteItem(**input_data.model_dump())
     doc = note_obj.model_dump()

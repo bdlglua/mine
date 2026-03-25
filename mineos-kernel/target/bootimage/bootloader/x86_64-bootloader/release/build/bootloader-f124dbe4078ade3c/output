@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/app/mineos-kernel/Cargo.toml
+cargo:rustc-link-search=native=/app/mineos-kernel/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-f124dbe4078ade3c/out
+cargo:rustc-link-lib=static=kernel_bin-mineos-kernel
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/app/mineos-kernel/target/x86_64-unknown-none/release/mineos-kernel
+cargo:rerun-if-changed=build.rs

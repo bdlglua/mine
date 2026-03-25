@@ -2,5 +2,7 @@
 // MineOS - Applications Module
 // =============================================================================
 
+#![allow(dead_code)]
+
 pub mod terminal;
 pub mod calculator;

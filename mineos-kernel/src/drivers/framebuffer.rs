@@ -1,15 +1,8 @@
 // =============================================================================
 // MineOS - Framebuffer Graphics Driver (Rust)
 // =============================================================================
-// Direct pixel-level access to the linear framebuffer provided by the
-// bootloader. This is the foundation for all GUI rendering in MineOS.
-//
-// Supports:
-//   - 32-bit color (BGRA format)
-//   - Pixel plotting, line drawing, rectangle filling
-//   - Double buffering to prevent screen tearing
-//   - Bitmap font rendering
-// =============================================================================
+
+#![allow(dead_code)]
 
 use alloc::vec::Vec;
 use spin::Mutex;

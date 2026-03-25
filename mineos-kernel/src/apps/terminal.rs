@@ -1,9 +1,8 @@
 // =============================================================================
 // MineOS - Terminal Application (Rust)
 // =============================================================================
-// A command-line terminal that runs inside the MineOS kernel.
-// Supports basic commands for system interaction.
-// =============================================================================
+
+#![allow(dead_code, unused_imports)]
 
 use crate::drivers::{vga_text, keyboard};
 use alloc::string::String;

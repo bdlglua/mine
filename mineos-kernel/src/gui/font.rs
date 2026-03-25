@@ -1,10 +1,8 @@
 // =============================================================================
 // MineOS - Bitmap Font (8x16 pixels per character)
 // =============================================================================
-// A built-in bitmap font for text rendering on the framebuffer.
-// Each character is 8 pixels wide and 16 pixels tall.
-// Data is stored as 16 bytes per character (1 bit per pixel per row).
-// =============================================================================
+
+#![allow(dead_code)]
 
 /// Height of each glyph in pixels
 pub const GLYPH_HEIGHT: usize = 16;

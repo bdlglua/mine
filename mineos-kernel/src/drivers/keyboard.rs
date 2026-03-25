@@ -1,9 +1,8 @@
 // =============================================================================
 // MineOS - PS/2 Keyboard Driver (Rust)
 // =============================================================================
-// Handles PS/2 keyboard input via IRQ1.
-// Translates scancodes to ASCII characters and manages a key buffer.
-// =============================================================================
+
+#![allow(dead_code)]
 
 use spin::Mutex;
 use lazy_static::lazy_static;

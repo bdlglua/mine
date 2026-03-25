@@ -1,9 +1,8 @@
 // =============================================================================
 // MineOS - Calculator Application (Rust)
 // =============================================================================
-// A basic calculator that runs inside MineOS.
-// Supports addition, subtraction, multiplication, and division.
-// =============================================================================
+
+#![allow(dead_code)]
 
 use alloc::string::String;
 use alloc::format;

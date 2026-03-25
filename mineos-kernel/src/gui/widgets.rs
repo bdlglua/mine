@@ -1,8 +1,8 @@
 // =============================================================================
 // MineOS - GUI Widgets (Rust)
 // =============================================================================
-// Reusable UI components for the desktop environment.
-// =============================================================================
+
+#![allow(dead_code)]
 
 use crate::drivers::framebuffer::{Color, FrameBuffer, palette};
 use alloc::string::String;

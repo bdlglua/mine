@@ -1,9 +1,8 @@
 // =============================================================================
 // MineOS - GUI Module
 // =============================================================================
-// The graphical user interface system for MineOS.
-// Provides the desktop environment, window management, and widget rendering.
-// =============================================================================
+
+#![allow(dead_code)]
 
 pub mod desktop;
 pub mod window;

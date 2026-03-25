@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-03-25T08:51:47.288906",
+  "total_tests": 10,
+  "passed_tests": 9,
+  "success_rate": "90.0%",
+  "test_details": [
+    {
+      "test": "Root API",
+      "method": "GET",
+      "endpoint": "",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "{\"message\":\"MineOS API\"}"
+    },
+    {
+      "test": "System Info",
+      "method": "GET",
+      "endpoint": "system/info",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "{\"cpu_percent\":4.9,\"memory\":{\"total\":33599991808,\"used\":13853556736,\"percent\":41.2},\"disk\":{\"total\":"
+    },
+    {
+      "test": "Seed Filesystem",
+      "method": "POST",
+      "endpoint": "seed",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "{\"status\":\"already seeded\"}"
+    },
+    {
+      "test": "Get Files",
+      "method": "GET",
+      "endpoint": "files",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "[{\"id\":\"8ce2001c-1e16-41eb-942e-4d180cc904f5\",\"name\":\"Documents\",\"path\":\"/Documents\",\"type\":\"folder\""
+    },
+    {
+      "test": "Get All Files",
+      "method": "GET",
+      "endpoint": "files/all",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "[{\"id\":\"8ce2001c-1e16-41eb-942e-4d180cc904f5\",\"name\":\"Documents\",\"path\":\"/Documents\",\"type\":\"folder\""
+    },
+    {
+      "test": "Create File",
+      "method": "POST",
+      "endpoint": "files",
+      "expected_status": 201,
+      "actual_status": 200,
+      "success": false,
+      "response_preview": "{\"id\":\"19d893c7-5f69-4b26-b12b-18c83b1636a4\",\"name\":\"test_file.txt\",\"path\":\"/test_file.txt\",\"type\":\""
+    },
+    {
+      "test": "Get Notes",
+      "method": "GET",
+      "endpoint": "notes",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "[]"
+    },
+    {
+      "test": "Create Note",
+      "method": "POST",
+      "endpoint": "notes",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "{\"id\":\"c8031386-cf4f-4adf-b251-67fe3e63f1d0\",\"title\":\"Test Note\",\"content\":\"This is a test note crea"
+    },
+    {
+      "test": "Update Note",
+      "method": "PUT",
+      "endpoint": "notes/c8031386-cf4f-4adf-b251-67fe3e63f1d0",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "{\"id\":\"c8031386-cf4f-4adf-b251-67fe3e63f1d0\",\"title\":\"Updated Test Note\",\"content\":\"This note has be"
+    },
+    {
+      "test": "Delete Note",
+      "method": "DELETE",
+      "endpoint": "notes/c8031386-cf4f-4adf-b251-67fe3e63f1d0",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_preview": "{\"status\":\"deleted\"}"
+    }
+  ]
+}
